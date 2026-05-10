@@ -5,13 +5,122 @@
 <meta charset="UTF-8">
 <title>Misifu</title>
 <style>
-.centrado {
-text-align: center;
+/* Configuración General del Cuerpo */
+body {
+    background-color: #3a1f0b;
+    color: #8b4513;
+    font-family: "Times New Roman", serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
+
+/* Contenedor principal (simulando la clase .page del CSS original) */
+body > * {
+    max-width: 800px;
+    width: 100%;
+}
+
+/* Estilo de la "Página" o recuadro principal */
+html {
+    background-color: #3a1f0b;
+    border: solid 5px #d2b48c;
+    box-shadow: 0px 0px 15px #d2b48c, 0px 0px 5px #d2b48c inset;
+    min-height: 100vh;
+}
+
+/* Encabezados */
+h1, h2, h3 {
+    color: #8b4513;
+    text-align: center;
+    font-weight: 900;
+    text-transform: uppercase;
+    text-shadow: 0 0 5px #d2a85c, 1px 1px 1px #d2a85c;
+    filter: drop-shadow(0 0 5px #d2a85c);
+}
+
+/* Párrafos y texto general */
+p, pre, figcaption {
+    color: #8b4513;
+    font-weight: 600; /* Un poco más grueso para que se lea sobre el oscuro */
+    text-shadow: 0 0 3px #d2a85c;
+    background: rgba(0, 0, 0, 0.2);
+    padding: 10px;
+    border-radius: 4px;
+}
+
+/* Formateo de los bloques pre (tus textos largos) */
+pre {
+    white-space: pre-wrap; /* Para que el texto no se salga de la pantalla */
+    word-wrap: break-word;
+    border-left: 3px solid #d2b48c;
+}
+
+/* Estilo de los desplegables (Details & Summary) */
+details {
+    background-color: #3a1f0b;
+    border: 1px solid #d2b48c;
+    margin-bottom: 10px;
+    padding: 10px;
+    box-shadow: 2px 4px 6px rgba(0,0,0,0.45);
+}
+
+summary {
+    color: #d2b48c;
+    font-weight: bold;
+    cursor: pointer;
+    list-style: none;
+    text-shadow: 0 0 5px #d2a85c;
+}
+
+summary::before {
+    content: "▶ ";
+}
+
+details[open] summary::before {
+    content: "▼ ";
+}
+
+/* Imágenes y Figuras */
+figure {
+    text-align: center;
+    border: 2px solid #d2b48c;
+    padding: 10px;
+    background: #3a1f0b;
+    filter: drop-shadow(0 0 5px #d2b48c);
+}
+
 img {
-  max-width: 300px;
-  max-height: 200px;
-  object-fit: contain;
+    max-width: 100%;
+    height: auto;
+    opacity: 0.8;
+    transition: opacity 0.3s;
+    border: 1px solid #8b4513;
+}
+
+img:hover {
+    opacity: 1;
+}
+
+/* Enlaces y resaltados */
+b, u {
+    color: #d2b48c;
+    text-shadow: 0 0 8px #d2b48c;
+}
+
+marquee {
+    border-bottom: 2px solid #d2b48c;
+    margin-bottom: 20px;
+}
+
+/* Estilo para la prueba de caracteres (hacerla resaltar) */
+p:nth-of-type(2) {
+    border: 1px dashed #d2b48c;
+    font-family: monospace;
+    font-size: 0.9em;
 }
 </style>
 </head>
@@ -64,5 +173,17 @@ uwu [TEST_END_0123456789!@#$%^&]
 </pre>
 <p> Por último para aquellas personas que provengan de aquí y no me conozcan en discord, lo cual sería extremadamente raro
 mi discord es el siguiente: Sizarusa. Respondo a veces y eso. FIN</p>
+  <p>De la misma forma en la que esto no ha terminado, voy a ir actualizando un poco la web. Según me he enterado leyendo otras descripciones en redes sociales como podrían ser discord 
+  o redirecciones a carrd desde reddit o discord de nuevo (todas las descripciones llevan a discord) me he enterado de que por lo general las personas promedio
+  o no tan promedio suelen poner un apartado de DNI (Do not interact) y de paso poner al fin css a mi página web usando un viejo código de una wiki sobre backrooms.</p>
+  <details>
+<summary> DNI </summary>
+<pre> En realidad interactuo básicamente con quien desee hablarme, porque me parece bien hablar con personas incluso si se les puede considerar
+  extremas en cuanto a ideas o maneras (formas de comportarse). Me gusta tener diferentes prespectivas para contrastar mis ideas y evitar camaras de eco.
+  Pero diría que como regla básica que me respete y ya está. Por lo demás, me da igual si usa 4chan o es un incel.
+</pre>
+<p>Dicho esto <b>Disfrutar del nuevo css</b>, espero :3 y también cuando aprenda js reemplazaré el marquee (que no tiene soporte en la actualidad)
+por algo que soporte mas tipos de pantallas. Accesibilidad señores y señoras, el futuro es hoy ¿Me oiste viejo?</p>
+</details>
 </body>
 </html>
